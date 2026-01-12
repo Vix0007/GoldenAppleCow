@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "gacow",
+	"version": "${version}",
+	"name": "GAcow",
+	"description": "This is a mod about golden apple cows!",
+	"authors": [
+		"Vix!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/gacow/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.vix.gacow.GAcow"
+		],
+		"fabric-datagen": [
+			"net.vix.gacow.GAcowDataGenerator"
+		],
+		"client": [
+			"net.vix.gacow.GAcowClient"
+		]
+	},
+	"mixins": [
+		"gacow.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
