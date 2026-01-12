@@ -2,6 +2,7 @@ package net.vix.gacow;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.vix.gacow.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +12,7 @@ public class GAcow implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 
 	}
 }
